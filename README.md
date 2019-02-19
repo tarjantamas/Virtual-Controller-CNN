@@ -1,13 +1,13 @@
 # Virtual Controller Using CNNs
 
 ## Dependencies
-Python 3.5.0
-`pip install opencv-python`
-`pip install --upgrade tensorflow-gpu==1.8.0` OR `pip install --upgrade tensorflow==1.8.0`
-`pip install keras`
-`pip install pyautogui`
-`pip install pywin32`
-`pip install bayesian-optimization`
+Python 3.5.0<br/>
+`pip install opencv-python`<br/>
+`pip install --upgrade tensorflow-gpu==1.8.0` OR `pip install --upgrade tensorflow==1.8.0`<br/>
+`pip install keras`<br/>
+`pip install pyautogui`<br/>
+`pip install pywin32`<br/>
+`pip install bayesian-optimization`<br/>
 
 ## Models
 
@@ -20,17 +20,17 @@ In order to capture data for one of the models, you have to set the correct data
 
 In `src/datapipeline/datapipeline.py` modify the following import:
 
-`from common.path import ??? as DATA_PATH` 
+`from common.path import ??? as DATA_PATH`<br/> 
 
-`??? = BRAKE_IMAGES_ROOT` for capturing data for the pedal model.
-`??? = WHEEL_CONTROLER_IMAGES_ROOT` for capturing data for the wheel model.
+`??? = BRAKE_IMAGES_ROOT` for capturing data for the pedal model.<br/>
+`??? = WHEEL_CONTROLER_IMAGES_ROOT` for capturing data for the wheel model.<br/>
 
 You will also need to change the following import in the same file:
 
 `from model.??? import CLASSES, CLASS_COUNT`
 
-`??? = smallpedalmodel` for capturing data for the pedal model.
-`??? = smallwheelmodel` for capturing data for the wheel model.
+`??? = smallpedalmodel` for capturing data for the pedal model.<br/>
+`??? = smallwheelmodel` for capturing data for the wheel model.<br/>
 
 When you start capturing data a preview of your webcam will appear. You will be prompted for a number of seconds to prepare
 for a given class. You should gesture with your hands for the class and after a short timeout the webcam will start capturing
@@ -46,18 +46,18 @@ In order to train one of the models, you have to set the correct data path and c
 
 For training the wheel model set the following constants in `src/common/path.py`
 
-`TRAIN_DATA_PATH = WHEEL_CONTROLER_IMAGES_ROOT`
-`VALIDATION_DATA_PATH = WHEEL_CONTROLER_VALIDATION_DATA_ROOT`
-`TEST_DATA_PATH = WHEEL_CONTROLER_IMAGES_ROOT`
+`TRAIN_DATA_PATH = WHEEL_CONTROLER_IMAGES_ROOT`<br/>
+`VALIDATION_DATA_PATH = WHEEL_CONTROLER_VALIDATION_DATA_ROOT`<br/>
+`TEST_DATA_PATH = WHEEL_CONTROLER_IMAGES_ROOT`<br/>
 
 In `src/train/train.py` modify import smallwheelmodel:
 `import model.smallwheelmodel as trainModel`
 
 For training the pedal model set the following constants in `src/common/path.py`
 
-`TRAIN_DATA_PATH = BRAKE_IMAGES_ROOT`
-`VALIDATION_DATA_PATH = BRAKE_VALIDATION_DATA_ROOT`
-`TEST_DATA_PATH = BRAKE_IMAGES_ROOT`
+`TRAIN_DATA_PATH = BRAKE_IMAGES_ROOT`<br/>
+`VALIDATION_DATA_PATH = BRAKE_VALIDATION_DATA_ROOT`<br/>
+`TEST_DATA_PATH = BRAKE_IMAGES_ROOT`<br/>
 
 In `src/train/train.py` modify import smallpedalmodel:
 `import model.smallpedalmodel as trainModel`
