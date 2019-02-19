@@ -14,7 +14,7 @@ Python 3.5.0<br/>
 - smallwheelmodel (used for detecting gestures for 'left', 'right' and 'forward')
 - smallpedalmodel (used for detecting gestures for 'pedaldown', 'pedalup', 'brake')
 
-## Data aquirement
+## Data acquirement
 
 In order to capture data for one of the models, you have to set the correct data path and correct model.
 
