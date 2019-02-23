@@ -1,6 +1,6 @@
 # Virtual Controller Using CNNs
 
-![usage example](http://37.59.67.242/html/softcomputing/example.gif)
+[![Video](https://img.youtube.com/vi/vaDNwgEBLJY/0.jpg)](https://www.youtube.com/watch?v=vaDNwgEBLJY)
 
 ## Dependencies
 Python 3.5.0<br/>
