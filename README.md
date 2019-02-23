@@ -1,5 +1,7 @@
 # Virtual Controller Using CNNs
 
+![usage example](http://37.59.67.242/html/softcomputing/example.gif)
+
 ## Dependencies
 Python 3.5.0<br/>
 `pip install opencv-python`<br/>
