@@ -1,7 +1,5 @@
 # Virtual Controller Using CNNs
 
-[![Video](https://img.youtube.com/vi/vaDNwgEBLJY/0.jpg)](https://www.youtube.com/watch?v=vaDNwgEBLJY)
-
 ## Dependencies
 Python 3.5.0<br/>
 `pip install opencv-python`<br/>
